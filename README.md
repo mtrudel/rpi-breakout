@@ -10,11 +10,11 @@ The board provides the following interfaces:
 
 ## 40 Pin Duplicate
 
-The 40 pin header is duplicated pin-for-pin; use this for one-off access to pins as needed.
+The [40 pin header](https://pinout.xyz) is duplicated pin-for-pin; use this for one-off access to pins as needed.
 
 ## I2C
 
-Breaks out the RPi's primary I2C interface (ie: not the EEPROM interface) is broken out on the I2C header. Pinout is (from left to right looking at the top of the board): 
+Breaks out the RPi's primary [I2C](https://pinout.xyz/pinout/i2c) interface (ie: not the EEPROM interface) is broken out on the I2C header. Pinout is (from left to right looking at the top of the board): 
 
 * Pin 1: 3.3V
 * Pin 2: I2C Data (RPi BCM2)
@@ -23,7 +23,7 @@ Breaks out the RPi's primary I2C interface (ie: not the EEPROM interface) is bro
 
 ## UART
 
-Breaks out the RPi's UART. Pinout is (from left to right looking at the top of the board): 
+Breaks out the RPi's [UART](https://pinout.xyz/pinout/uart). Pinout is (from left to right looking at the top of the board): 
 
 * Pin 1: 3.3V
 * Pin 2: Tx (RPi BCM14)
@@ -32,7 +32,7 @@ Breaks out the RPi's UART. Pinout is (from left to right looking at the top of t
 
 ## 1-Wire
 
-Breaks out the RPi's [1-Wire](https://thepihut.com/blogs/raspberry-pi-tutorials/18095732-sensors-temperature-with-the-1-wire-interface-and-the-ds18b20) interface. Pinout is (from left to right looking at the top of the board): 
+Breaks out the RPi's [1-Wire](https://pinout.xyz/pinout/1_wire) interface. Pinout is (from left to right looking at the top of the board): 
 
 * Pin 1: 3.3V
 * Pin 2: Data (RPi BCM4)
