@@ -42,7 +42,7 @@ The 1-Wire spec requires a 4.7k pullup resistor on the data line; this can be do
 
 ## GPIO
 
-Six GPIOs is broken out, corresponding to BCM22-BCM27. The pinout for each column is as follows (from top to bottom looking at the top of the board):
+Six GPIOs are broken out, corresponding to BCM22-BCM27. The pinout for each column is as follows (from top to bottom looking at the top of the board):
 
 * Pin 1: In-line resistor terminal (common with pin 4)
 * Pin 2: Ground
