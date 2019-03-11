@@ -16,27 +16,27 @@ The 40 pin header is duplicated pin-for-pin; use this for one-off access to pins
 
 Breaks out the RPi's primary I2C interface (ie: not the EEPROM interface) is broken out on the I2C header. Pinout is (from left to right looking at the top of the board): 
 
-Pin 1: 3.3V
-Pin 2: I2C Data (RPi BCM2)
-Pin 3: I2C Clock (RPi BCM3)
-Pin 4: Ground
+* Pin 1: 3.3V
+* Pin 2: I2C Data (RPi BCM2)
+* Pin 3: I2C Clock (RPi BCM3)
+* Pin 4: Ground
 
 ## UART
 
 Breaks out the RPi's UART. Pinout is (from left to right looking at the top of the board): 
 
-Pin 1: 3.3V
-Pin 2: Tx (RPi BCM14)
-Pin 3: Rx (RPi BCM15)
-Pin 4: Ground
+* Pin 1: 3.3V
+* Pin 2: Tx (RPi BCM14)
+* Pin 3: Rx (RPi BCM15)
+* Pin 4: Ground
 
 ## 1-Wire
 
 Breaks out the RPi's [1-Wire](https://thepihut.com/blogs/raspberry-pi-tutorials/18095732-sensors-temperature-with-the-1-wire-interface-and-the-ds18b20) interface. Pinout is (from left to right looking at the top of the board): 
 
-Pin 1: 3.3V
-Pin 2: Data (RPi BCM4)
-Pin 3: Ground
+* Pin 1: 3.3V
+* Pin 2: Data (RPi BCM4)
+* Pin 3: Ground
 
 The 1-Wire spec requires a 4.7k pullup resistor on the data line; this can be done by populating the resistor marked `4.7k` on the left of the breakout board (there is provision to install either a through hole resistor or an 0805 SMD; both connections are wired in parallel)
 
@@ -44,10 +44,10 @@ The 1-Wire spec requires a 4.7k pullup resistor on the data line; this can be do
 
 Six GPIOs is broken out, corresponding to BCM22-BCM27. The pinout for each column is as follows (from top to bottom looking at the top of the board):
 
-Pin 1: In-line resistor terminal (common with pin 4)
-Pin 2: Ground
-Pin 3: GPIO pin (corresponds to BCMXX)
-Pin 4: In-line resistor terminal (common with pin 1)
+* Pin 1: In-line resistor terminal (common with pin 4)
+* Pin 2: Ground
+* Pin 3: GPIO pin (corresponds to BCMXX)
+* Pin 4: In-line resistor terminal (common with pin 1)
 
 This layout is a bit odd but allows each pin to be used either as an input (making use of the Pi's internal pullup resistors), or as an LED driver (by populating an optional resistor on each GPIO, detailed below).
 
