@@ -80,7 +80,7 @@ In pictures:
 
 ```
    O -----
-         | <-- 330 ohm resistor
+         || <-- 330 ohm resistor
    O ----- 
           
    O    ---------|\
