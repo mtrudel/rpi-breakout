@@ -14,7 +14,7 @@ The [40 pin header](https://pinout.xyz) is duplicated pin-for-pin; use this for 
 
 ## I2C
 
-Breaks out the RPi's primary [I2C](https://pinout.xyz/pinout/i2c) interface (ie: not the EEPROM interface) is broken out on the I2C header. Pinout is (from left to right looking at the top of the board): 
+Breaks out the RPi's primary [I2C](https://pinout.xyz/pinout/i2c) interface (ie: not the EEPROM interface). Pinout is (from left to right looking at the top of the board): 
 
 * Pin 1: 3.3V
 * Pin 2: I2C Data (RPi BCM2)
@@ -38,7 +38,7 @@ Breaks out the RPi's [1-Wire](https://pinout.xyz/pinout/1_wire) interface. Pinou
 * Pin 2: Data (RPi BCM4)
 * Pin 3: Ground
 
-The 1-Wire spec requires a 4.7k pullup resistor on the data line; this can be done by populating the resistor marked `4.7k` on the left of the breakout board (there is provision to install either a through hole resistor or an 0805 SMD; both connections are wired in parallel)
+The 1-Wire spec mandates a 4.7k pullup resistor on the data line; this can be done by populating the resistor marked `4.7k` on the left of the breakout board (there is provision to install either a through hole resistor or an 0805 SMD; both connections are wired in parallel)
 
 ## GPIO
 
@@ -56,6 +56,18 @@ This layout is a bit odd but allows each pin to be used either as an input (maki
 1. Wire your sensor between pins 2 and 3 of the relevant GPIO column, and set the GPIO to use a pullup resistor in software. 
 2. The GPIO will be high when the sensor is open, and go low when the sensor closes.
 
+In pictures:
+
+```
+   O
+   
+   O ----- 
+          |\  <-- switch
+   O -----
+   
+   O
+```
+
 ### Driving an LED
 
 This comes with the usual caveats about driving LEDs directly off GPIO pins; so long as you're driving small LEDs in a non-continuous manner you should be fine, but caveat emptor etc.
@@ -63,6 +75,18 @@ This comes with the usual caveats about driving LEDs directly off GPIO pins; so 
 1. Wire an appropriate (~ 300&ohm;) resistor between pins 1 and 2 of the relevant GPIO column (there is provision to install either a through hole resistor or an 0805 SMD; both connections are wired in parallel)
 2. Wire your LED with the anode (longer leg) in pin 3 and the cathode (shorter leg) in pin 4. 
 3. You can now turn the LED on by driving the relevant GPIO output high.
+
+In pictures:
+
+```
+   O -----
+         | <-- 330 ohm resistor
+   O ----- 
+          
+   O    ---------|\
+                 | | <-- LED
+   O       ------|/
+```
 
 # License
 
