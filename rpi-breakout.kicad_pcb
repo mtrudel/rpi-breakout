@@ -1406,7 +1406,7 @@
   (gr_text v1.1 (at 161.151 115.965) (layer B.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
-  (gr_text github.com/mtrudel/rpi_breakout (at 138.037 127.776) (layer B.SilkS)
+  (gr_text github.com/mtrudel/rpi-breakout (at 138.037 127.776) (layer B.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
   (gr_line (start 165 103) (end 165 127) (layer Edge.Cuts) (width 0.2) (tstamp 5C81E82B))

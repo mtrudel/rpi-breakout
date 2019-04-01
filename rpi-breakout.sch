@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:rpi_breakout-cache
+LIBS:rpi-breakout-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
