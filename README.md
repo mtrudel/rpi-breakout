@@ -1,10 +1,10 @@
 # Raspberry Pi Breakout Board
 
-<img src="https://644db4de3505c40a0444-327723bce298e3ff5813fb42baeefbaa.ssl.cf1.rackcdn.com/88508a9d1a76e131b58f18a55bb1c43b.png" width="200"/>
+<img src="https://644db4de3505c40a0444-327723bce298e3ff5813fb42baeefbaa.ssl.cf1.rackcdn.com/abf2c8821eae01d58bc2440b78aae8c9.png" width="200"/>
 
 A simple Raspberry Pi pHAT to break out common interfaces & GPIO. 
 
-Available at [OSH Park](https://oshpark.com/shared_projects/KOGrXhLh).
+Available at [OSH Park](https://oshpark.com/shared_projects/pOZPamMf).
 
 The board provides the following interfaces:
 
@@ -42,7 +42,7 @@ The 1-Wire spec mandates a 4.7k pullup resistor on the data line; this can be do
 
 ## GPIO
 
-Six GPIOs are broken out, corresponding to BCM22-BCM27. The pinout for each column is as follows (from top to bottom looking at the top of the board):
+Eight GPIOs are broken out, corresponding to BCM12-BCM13 and BCM22-BCM27. The pinout for each column is as follows (from top to bottom looking at the top of the board):
 
 * Pin 1: In-line resistor terminal (common with pin 4)
 * Pin 2: Ground
